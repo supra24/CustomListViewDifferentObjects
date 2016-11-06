@@ -6,16 +6,8 @@ package com.example.damian.customlistviewdifferentobjects.objects;
 
 public abstract class ObjectParentModel {
 
-    // first model object
-
-
-
     public ObjectParentModel() {
     }
-
-//    abstract int getVisibleObjectFirst();
-//
-//    abstract int getVisibleObjectSecond();
 
     public abstract int getTypeObject();
 }

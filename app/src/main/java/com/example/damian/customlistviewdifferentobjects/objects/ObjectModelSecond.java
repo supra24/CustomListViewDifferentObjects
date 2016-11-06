@@ -8,7 +8,6 @@ public class ObjectModelSecond extends ObjectParentModel {
 
     private int tv_lp;
 
-
     @Override
     public int getTypeObject() {
         return 2;

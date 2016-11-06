@@ -12,16 +12,6 @@ public class ObjectModelFirst extends ObjectParentModel {
     private int et_theta;
     private int et_d;
 
-//    @Override
-//    int getVisibleObjectFirst() {
-//        return View.VISIBLE;
-//    }
-//
-//    @Override
-//    int getVisibleObjectSecond() {
-//        return View.INVISIBLE;
-//    }
-
     @Override
     public int getTypeObject() {
         return 1;

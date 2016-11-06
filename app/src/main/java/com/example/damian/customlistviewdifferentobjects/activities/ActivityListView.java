@@ -26,9 +26,6 @@ public class ActivityListView extends AppCompatActivity {
     @BindView(R.id.floating_action_button_forward_add)
     FloatingActionButton floatingActionButton;
 
-    private boolean doubleBackToExitPressedOnce = false;
-    private static int CLOSE_APP_ON_BACK = 2000;
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -18,14 +18,6 @@ public class StaticVolumesObjects {
         return objectParentModels;
     }
 
-//    public static void setOneJoinModel(ObjectParentModel objectParentModel) {
-//
-//        objectParentModels.get(objectParentModel.getTv_lp()).setEt_alpha(objectParentModel.getEt_alpha());
-//        objectParentModels.get(objectParentModel.getTv_lp()).setEt_a(objectParentModel.getEt_a());
-//        objectParentModels.get(objectParentModel.getTv_lp()).setEt_theta(objectParentModel.getEt_theta());
-//        objectParentModels.get(objectParentModel.getTv_lp()).setEt_d(objectParentModel.getEt_d());
-//    }
-
     public static void addJoin(int i) {
         ObjectParentModel objectParentModel = null;
 
@@ -34,11 +26,6 @@ public class StaticVolumesObjects {
         } else if (i == 2) {
             objectParentModel = new ObjectModelSecond();
         }
-
-//        if (objectParentModels.isEmpty())
-//            objectParentModel.setTv_lp(1);
-//        else
-//            objectParentModel.setTv_lp(objectParentModels.get(objectParentModels.size() - 1).getTv_lp() + 1);
 
         objectParentModels.add(objectParentModel);
     }

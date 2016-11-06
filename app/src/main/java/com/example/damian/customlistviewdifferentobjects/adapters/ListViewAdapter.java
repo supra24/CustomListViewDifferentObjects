@@ -70,14 +70,9 @@ public class ListViewAdapter extends ArrayAdapter<ObjectParentModel> {
 
                 ObjectModelFirst objectModelFirst = (ObjectModelFirst) objectParentModels.get(position);
 
-//                if (convertView == null) {
-
                 listViewHolder = new ListViewHolder();
                 inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.custom_list_view_object_first, null);
-
-                linearLayoutFirst = (LinearLayout) convertView.findViewById(R.id.id_linear_layout_first);
-                linearLayoutSecond = (LinearLayout) convertView.findViewById(R.id.id_linear_layout_second);
 
                 listViewHolder.textViewlp = (TextView) convertView.findViewById(R.id.list_view_join_i_forward);
                 listViewHolder.editalpha = (EditText) convertView.findViewById(R.id.list_view_join_alpha_forward);
@@ -86,10 +81,6 @@ public class ListViewAdapter extends ArrayAdapter<ObjectParentModel> {
                 listViewHolder.editd = (EditText) convertView.findViewById(R.id.list_view_join_d_forward);
 
                 convertView.setTag(listViewHolder);
-
-//                } else {
-//                    listViewHolder = (ListViewHolder) convertView.getTag();
-//                }
 
                 listViewHolder.textViewlp.setText(String.valueOf(objectModelFirst.getTv_lp()));
                 listViewHolder.editalpha.setText(String.valueOf(objectModelFirst.getEt_alpha()));
@@ -103,24 +94,19 @@ public class ListViewAdapter extends ArrayAdapter<ObjectParentModel> {
 
                 ObjectModelSecond objectModelSecond = (ObjectModelSecond) objectParentModels.get(position);
 
-//                if (convertView == null) {
                 listViewHolder = new ListViewHolder();
                 inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.custom_list_view_object_second, null);
 
-                linearLayoutFirst = (LinearLayout) convertView.findViewById(R.id.id_linear_layout_first);
-                linearLayoutSecond = (LinearLayout) convertView.findViewById(R.id.id_linear_layout_second);
-
                 listViewHolder.textViewLayoutSecond = (TextView) convertView.findViewById(R.id.text_view_layout_second);
 
                 convertView.setTag(listViewHolder);
-
-//                } else {
-//                    listViewHolder = (ListViewHolder) convertView.getTag();
-//                }
             }
             break;
         }
+
+        linearLayoutFirst = (LinearLayout) convertView.findViewById(R.id.id_linear_layout_first);
+        linearLayoutSecond = (LinearLayout) convertView.findViewById(R.id.id_linear_layout_second);
 
         return convertView;
     }

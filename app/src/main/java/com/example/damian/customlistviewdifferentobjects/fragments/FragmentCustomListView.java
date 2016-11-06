@@ -19,7 +19,6 @@ public class FragmentCustomListView extends FragmentParent {
     private ListViewAdapter listViewAdapter;
     private ArrayList<ObjectParentModel> objectParentModels = new ArrayList<>();
 
-
     public FragmentCustomListView() {
         layoutid = R.layout.fragment_join_list_view;
     }
@@ -40,7 +39,6 @@ public class FragmentCustomListView extends FragmentParent {
 
         listViewAdapter.notifyDataSetInvalidated();
     }
-
 
     public boolean undoObject() {
 
