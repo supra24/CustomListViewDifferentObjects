@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/id_add_first"
+            android:title="Add First"></item>
+
+        <item
+            android:id="@+id/id_add_second"
+            android:title="Add Second"></item>
+
+        <item
+            android:id="@+id/id_undo"
+            android:title="Undo"></item>
+    </group>
+</menu>
