@@ -6,15 +6,26 @@ package com.example.damian.customlistviewdifferentobjects.objects;
 
 public class ObjectModelFirst extends ObjectParentModel {
 
+    private int index;
     private int tv_lp;
     private int et_alpha;
     private int et_a;
     private int et_theta;
     private int et_d;
 
+    public ObjectModelFirst(int index){
+        this.index = index;
+        tv_lp = index;
+    }
+
     @Override
     public int getTypeObject() {
         return 1;
+    }
+
+    @Override
+    public int getObjectIndex() {
+        return index;
     }
 
     // first model object

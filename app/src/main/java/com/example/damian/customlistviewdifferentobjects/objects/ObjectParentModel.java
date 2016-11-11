@@ -10,4 +10,6 @@ public abstract class ObjectParentModel {
     }
 
     public abstract int getTypeObject();
+
+    public abstract int getObjectIndex();
 }

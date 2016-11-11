@@ -33,9 +33,9 @@ public class FragmentCustomListView extends FragmentParent {
         listView.setAdapter(listViewAdapter);
     }
 
-    public void addObjectJoin(int i) {
+    public void addObjectJoin(int typeObject) {
 
-        StaticVolumesObjects.addJoin(i);
+        StaticVolumesObjects.addJoin(typeObject);
 
         listViewAdapter.notifyDataSetInvalidated();
     }

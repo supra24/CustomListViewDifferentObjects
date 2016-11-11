@@ -18,15 +18,34 @@ public class StaticVolumesObjects {
         return objectParentModels;
     }
 
-    public static void addJoin(int i) {
+    public static void addJoin(int typeObject) {
         ObjectParentModel objectParentModel = null;
 
-        if (i == 1) {
-            objectParentModel = new ObjectModelFirst();
-        } else if (i == 2) {
-            objectParentModel = new ObjectModelSecond();
+        if (objectParentModels.isEmpty()) {
+            if (typeObject == 1) {
+                objectParentModel = new ObjectModelFirst(0);
+            } else if (typeObject == 2) {
+                objectParentModel = new ObjectModelSecond(0);
+            }
+        } else {
+            if (typeObject == 1) {
+                objectParentModel = new ObjectModelFirst(objectParentModels.get(objectParentModels.size() - 1).getObjectIndex() + 1);
+            } else if (typeObject == 2) {
+                objectParentModel = new ObjectModelSecond(objectParentModels.get(objectParentModels.size() - 1).getObjectIndex() + 1);
+            }
         }
 
         objectParentModels.add(objectParentModel);
+    }
+
+    public static void setOneModel(ObjectModelFirst oneModel) {
+
+        objectParentModels.remove(oneModel.getObjectIndex());
+        objectParentModels.add(oneModel.getObjectIndex(), oneModel);
+    }
+
+    public static void setOneModel(ObjectModelSecond oneModel) {
+
+        objectParentModels.add(oneModel.getObjectIndex(), oneModel);
     }
 }
