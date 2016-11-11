@@ -11,7 +11,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.example.damian.customlistviewdifferentobjects.objects.ObjectModelFirst;
-import com.example.damian.customlistviewdifferentobjects.objects.ObjectModelSecond;
 import com.example.damian.customlistviewdifferentobjects.objects.ObjectParentModel;
 import com.example.damian.customlistviewdifferentobjects.R;
 import com.example.damian.customlistviewdifferentobjects.staticsVolumes.StaticVolumesObjects;
